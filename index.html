@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/mobile-first.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Faça seu calculo</h1>
+    </header>
+
+    <section>
+        <div id="txtc">
+            
+        </div>
+        <div id="btnreset">
+            <input type="button" value="Resetar" onclick="resetar()">
+        </div>
+
+        <div id="corpoCalc">
+            <div id="botoes">
+                <div class="btnNum" id="0" onclick="checarNum(0)">
+                    0
+                </div>
+                <div class="btnNum" id="1" onclick="checarNum(1)">
+                    1
+                </div>
+                <div class="btnNum" id="2" onclick="checarNum(2)">
+                    2
+                </div>
+                <div class="btnNum" id="3" onclick="checarNum(3)">
+                    3
+                </div>
+                <div class="btnNum" id="4" onclick="checarNum(4)">
+                    4
+                </div>
+                <div class="btnNum" id="5" onclick="checarNum(5)">
+                    5
+                </div>
+                <div class="btnNum" id="6" onclick="checarNum(6)">
+                    6
+                </div>
+                <div class="btnNum" id="7" onclick="checarNum(7)">
+                    7
+                </div>
+                <div class="btnNum" id="8" onclick="checarNum(8)">
+                    8
+                </div>
+                <div class="btnNum" id="9" onclick="checarNum(9)">
+                    9
+                </div>
+                <div id="ponto" onclick="ponto()">
+                    .
+                </div>
+                <div class="sinalOper" id="+" onclick="checarOper('+')">
+                    +
+                </div>
+                <div class="sinalOper" id="-" onclick="checarOper('-')">
+                    -
+                </div>
+                <div class="sinalOper" id="/" onclick="checarOper('/')">
+                    ÷
+                </div>
+                <div class="sinalOper" id="*" onclick="checarOper('*')">
+                    x
+                </div>
+                <div id="igual" onclick="igual()">
+                    =
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
