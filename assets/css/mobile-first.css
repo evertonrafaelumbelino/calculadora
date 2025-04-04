@@ -5,106 +5,210 @@
     margin: 0;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+section {
+    background-color: #303030;
+    padding: 20px 0px;
+    margin: auto;
+    width: 95%;
+    border-radius: 20px;
 }
 
 #txtc {
+    background-color: white;
     padding: 8px;
-    margin: 5px;
-    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 20px;
+    border-radius: 10px;
 }
 
 #btnreset {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 
-input[type=button] {
+input {
     padding: 5px;
     margin: 5px 5px 20px 5px;
-    width: 100px;
+    width: 50%;
     background-color: white;
     color: black;
-    border: 1px solid black;
-    border-radius: 8px;
+    border: none;
+    border-radius: 10px;
 }
 
-input[type=button]:hover {
+input:hover {
     background-color: red;
+    color: white;
     transition: .35s;
-}
-
-#res {
-    margin: 10px 5px;
+    cursor: pointer;
 }
 
 #corpoCalc {
     padding: 10px;
     margin: 5px;
-    border: 1px solid black;
 }
 
 #botoes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#botoes > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnNum {
-    border: 1px solid black;
+    width: 80%;
+    background-color: #454442;
+    color: white;
+    border-radius: 10px;
     font-size: 30px;
     margin: 5px;
-    max-width: 100px;
     text-align: center;
 }
 
 .btnNum:hover {
-    background-color: black;
-    color: white;
-    transition: .35s;
-} 
+    background-color: #D6D7D1;
+    color: black;
+    cursor: pointer;
+}
+
+#num0 {
+    grid-column: 1/1;
+    grid-row: 4/4;
+}
+
+#num1 {
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+#num2 {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+#num3 {
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+#num4 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+#num5 {
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+#num6 {
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+#num7 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+#num8 {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+#num9 {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
 
 #ponto {
-    border: 1px solid black;
+    width: 80%;
+    background-color: #454442;
+    color: white;
+    border-radius: 10px;
+    grid-column: 2/2;
+    grid-row: 4/4;
     font-size: 30px;
     margin: 5px;
-    max-width: 100px;
     text-align: center;
 }
 
 #ponto:hover {
-    color: white;
-    background-color: black;
-    transition: .35s;
+    background-color: #D6D7D1;
+    color: black;
+    cursor: pointer;
+}
+
+#mais {
+    grid-column: 4/4;
+    grid-row: 1/1;
+}
+
+#menos {
+    grid-column: 4/4;
+    grid-row: 2/2;
+}
+
+#divisao {
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+
+#multiplicacao {
+    grid-column: 4/4;
+    grid-row: 4/4;
 }
 
 .sinalOper {
-    border: 1px solid black;
-    font-size: 20px;
+    width: 80%;
+    background-color: #CF8D41;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
     padding: 7px 0px;
     margin: 5px;
-    max-width: 100px;
     text-align: center;
 }
 
 .sinalOper:hover {
-    color: white;
-    background-color: black;
-    transition: .35s;
+    background-color: #ff6200;
+    cursor: pointer;
 }
 
 #igual {
-    border: 1px solid black;
-    font-size: 30px;
+    width: 80%;
+    background-color: white;
+    color: #CF8D41;
+    border-radius: 10px;
+    grid-column: 3/3;
+    grid-row: 4/4;
+    font-size: 40px;
     margin: 5px;
-    max-width: 100px;
     text-align: center;
 }
 
 #igual:hover {
-    background-color: red;
+    background-color: #CF8D41;
+    color: rgb(154, 40, 40);
     transition: .35s;
+    cursor: pointer;
 }
